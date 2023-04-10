@@ -1,0 +1,112 @@
+@import './binder.scss' , 
+        './componentsStyle.scss',
+        './customPrime.scss' ,
+        './myCustoms.scss' ;
+
+@font-face {
+    font-family: Lato;
+    src: url("../fonts/Peyda-Medium.ttf");
+    // src: url("../fonts/shabnam-700.ttf");
+}
+
+@font-face {
+    font-family: BoldF;
+    font-weight: 600;
+    src: url("../fonts/Peyda-Medium.ttf");
+}
+
+
+.layout-wrapper {
+    background:$bg;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat;  
+  }
+
+  html {
+    font-size: 1rem !important;
+    font-family: Lato !important;
+   background: $bg !important;
+  }
+
+body {
+    color: $text !important;
+    overflow-x: hidden;
+    height: max-content;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-size: 100%;
+    font-family: Lato !important;
+    direction: rtl;
+    font-size: 1rem;
+   background: $bg !important;
+  }
+  
+  section {
+    padding: 3rem 0;
+  }
+
+  :active{
+    outline: none !important;
+  }
+  ::-webkit-input-placeholder { /* Edge */
+    color: $text !important;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $text !important;
+  }
+  
+  ::placeholder {
+    color: $text !important;
+  }
+  
+  ::-webkit-scrollbar {
+      width: 7px;
+  }
+  
+  ::-webkit-scrollbar-track {
+      background-color: #ebebeb;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      background: #8d8d8d;
+  }
+  
+
+label {
+  font-size: .9rem;
+}
+
+button {
+  box-shadow: none !important;
+  outline: none !important;
+  border:none !important;
+  padding: 1rem;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $gray !important;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $gray !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: $gray !important;
+}
+
+ul {
+  list-style-type: none;
+}
+

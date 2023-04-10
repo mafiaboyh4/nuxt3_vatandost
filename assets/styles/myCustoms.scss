@@ -1,0 +1,360 @@
+@import './binder.scss';
+
+.default-avatar {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .card {
+    @include BaseScreen;
+    background: $cardBg ;
+  }
+  
+  .normal-radius {
+    border-radius: $formBorderRadius !important;
+  }
+  
+  .max-radius {
+    border-radius: $borderRadius !important;
+  }
+  
+  .light-text {
+    color:$text !important;
+  }
+  
+  .between {
+    justify-content: space-between !important;
+  }
+  
+  .evenly {
+    justify-content: space-evenly !important;
+  }
+  
+  .j-start {
+    justify-content: flex-start !important;
+  }
+  .a-start {
+    align-items: flex-start !important;
+  }
+  .a-center {
+    align-items: center !important;
+  }
+  .j-center {
+    justify-content: center !important;
+  }
+  .j-end {
+    justify-content: flex-end !important;
+  }
+  .a-end {
+    align-items: flex-end !important;
+  }
+
+  
+.both-center {
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  
+  .v-line {
+    margin: 0 .5rem ;
+    width: 1px;
+    @include GradientBg;
+  }
+  .v-line-gray {
+    margin: 0 .5rem ;
+    width: 1px;
+    background:$gray;
+    display: block;
+    height: 30px;
+    opacity: .4;
+  }
+
+  .dash-line {
+    width: 100%;
+    height: 1px;
+    border: 1px dashed$gray;
+  }
+  
+  .bg-transparent {
+    background: transparent !important;
+  }
+  
+  .flex-row {
+    flex-wrap: nowrap !important;
+  }
+  
+  .card {
+    padding: .5rem !important;
+    margin-bottom: 0 !important;
+  }
+  
+  .text {
+    color:$text !important;
+  }
+  
+  .line {
+    width: 100%;
+    height: 1px;
+    background: $lineColor;
+  }
+  
+  
+  .Toastify__toast {
+    direction: rtl !important;
+    background:$card !important;
+    font-family: Lato !important;
+    color:$text !important;
+  }
+  
+  
+  .vh-80 {
+    height: 80vh;
+  }
+  .logout-btn {
+    background: $red !important;
+    margin-top: 1rem !important;
+  }
+  
+  .flout-action-btn  {
+    position: fixed;
+    left: 1rem ; 
+    bottom: 7rem ;
+    z-index: 3;
+    @media (min-width:512px) {
+      left: 50%;
+      transform: translateX(calc(-50% - 200px));
+    }
+  }
+  
+  .border-green {
+    border: .13rem solid $green !important;
+  }
+  .border-red {
+    border: .13rem solid $red !important;
+  }
+  .border-gold {
+    border: .13rem solid $gold !important;
+  }
+  
+  .gradient-btn {
+    @include GradientBg;
+
+  }
+
+  .circle {
+    border-radius: 50%;
+  }
+
+  
+.fw-b {
+    font-family: Boldf !important;
+  }
+  
+  .fw-n {
+    font-weight: normal;
+  }
+
+// colors 
+.red {
+    color: $red !important;
+  }
+.gold {
+    color: $gold !important;
+  }
+  .bg-red {
+    background: $red !important;
+    color: #fff !important;
+  }
+  .bg-gold {
+    background: $bgGold !important;
+    color: #212121 !important;
+  }
+  .light_purple {
+    color: $light_purple !important;
+  }
+  .gray {
+    color:$gray;
+  }
+
+  .bg-gray {
+    background:$gray !important;
+  }
+
+  .green {
+    color: $green !important;
+  }
+  .white {
+    color: #fff !important;
+  }
+  .bg-green {
+    background: $green !important;
+    color: #fff !important;
+    &:hover {
+      background: $hoverGreen !important;
+    }
+  }
+
+  
+.dr {
+    direction:rtl !important;
+  }
+  
+  .gap-1 {
+    gap: 1rem;
+  }
+  
+  .gap-2 {
+    gap:1rem;
+  }
+  
+  .reverse-icon {
+    position: relative;
+    transform: rotateY(-180deg);
+  }
+
+  .outline-border {
+    @include Purple_outline;
+  }
+
+  .btn-bg {
+    @include GradientBg;
+  }
+
+  
+  .bg-custom-light {
+    position: relative;
+    &::after {
+      content: '';
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      max-width: 500px;
+      max-height: 500px;
+      transform: translate(-50%, -50%);
+      height: 100%;
+      border-radius: 50%;
+      position: absolute;
+      display: block;
+      background: #1ea7891b;
+      filter: blur(12px);
+    }
+  }
+
+
+  .big-paragraph-controller {
+    width: 100%;
+    text-align: center;
+    position: relative;
+
+    p {
+        overflow: hidden;
+        height: 7rem;
+        text-overflow: clip;
+        position: relative;
+        color:$gray;
+        margin-top: 1rem;
+        font-size: 15px;
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: 4rem;
+            width: 100%;
+            pointer-events: none;
+        }
+        &.more {
+            height: auto;
+
+            &::after {
+                background-image: none;
+            }
+        }
+    }
+
+    button {
+        position: relative;
+        bottom: 1rem;
+        margin: auto;
+    }
+}
+
+
+.controller {
+  @include Wrap();
+  gap:.5rem;
+}
+
+.child {
+  @include Column;
+}
+
+.cp { 
+  @include Cp();
+}
+
+.p-relative {
+  position: relative !important;
+}
+
+.dl {
+  direction: ltr !important;
+}
+.dr {
+  direction: rtl !important;
+}
+
+.dashed-border {
+  @include DashedBorder;
+}
+
+.eclipse {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+@for $i from 10 through 25 {
+  .f-#{$i} {
+    font-size: $i+px !important;
+  }
+}
+
+@for $i from 10 through 25 {
+  .f-md-#{$i} {
+    @media (min-width:756px) {
+      font-size: $i+px !important;
+    }
+  }
+}
+
+
+@for $i from 10 through 25 {
+  .f-lg-#{$i} {
+    @media (min-width:992px) {
+      font-size: $i+px !important;
+    }
+  }
+}
+
+@for $i from 1 through 10 {
+  .zIndex-#{$i} {
+      z-index: $i !important;
+  }
+}
+
+
+@for $i from 1 through 5 {
+  .flex-#{$i} {
+    display: flex;
+    flex: $i !important;
+  }
+}

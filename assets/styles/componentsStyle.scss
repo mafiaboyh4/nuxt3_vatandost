@@ -1,0 +1,321 @@
+@import './binder.scss';
+
+
+.balanceCard-list-controller {
+    @include Wrap();
+    width: 100%;
+    gap: 1rem;
+    .card-item {
+        @include Column;
+        background: var(--card);;
+        border: var(var(--border));
+        max-width: fit-content;
+        padding: .5rem .5rem .8rem;
+        border-radius: 16px;
+        min-width: 300px;
+        gap: .8rem;
+        @media (min-width:1250px) {
+            min-width: calc(25% - .8rem);
+        }
+        .controller {
+            @include Wrap();
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text);;
+            .icon-controller {
+                padding: .5rem;
+                border-radius: 50%;
+                background: var(--inputBg);
+                width: 45px;
+                height: 45px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .symbol {
+                padding: .5rem;
+                background: var(--inputBg);
+            }
+            .price {
+                font-size: 1.3rem;
+                @include Bold();
+            }
+        }
+    }
+}
+
+
+.app-sidebar-controller {
+    @include BaseScreen;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    justify-content: space-between;
+    .p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link {
+        box-shadow: none !important;
+    }
+    .p-panelmenu-content {
+        padding: 0 !important;
+    }
+    .p-panelmenu .p-panelmenu-header > a {
+        font-weight: normal !important;
+    }
+    .p-panelmenu .p-panelmenu-header > a .p-panelmenu-icon {
+        position: absolute;
+        right: 0;
+    }
+    .p-panelmenu .p-panelmenu-panel .p-panelmenu-header > a {
+        border: none !important;
+        box-shadow: none !important;
+    }
+    .p-panelmenu .p-panelmenu-content {
+        border: none !important;
+    }
+    .p-panelmenu .p-submenu-list {
+        position: relative;
+        left: 1rem;
+    }
+    .profile-information {
+        width: 100%;
+        background: transparent;
+        border: none;
+    }
+    .default-avatar {
+        width: 90px;
+        height: 90px;
+        margin-top: 2rem;
+    }
+    .logout-btn {
+        width: 100%;
+        font-size: 20px;
+        color: var(--text);;
+        background: $red;
+        text-align: left;
+        padding: 1rem;
+
+    }
+}
+
+
+.avatar-swiper-controller {
+    @include Wrap;
+    img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+    }
+}
+
+.profile-information {
+    @include Card;
+    border-radius: $formBorderRadius;
+    padding: 1rem;
+    @include Column;
+    .default-avatar {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+
+.education-Match-card-controller {
+    @include Card;
+    @include Column;
+    padding: .5rem;
+    width: 100%;
+    max-width: 300px;
+    border-radius: $formBorderRadius;
+    .p-progressbar {
+        height: .4rem;
+        .p-progressbar-value {
+            background: $green;
+        }
+    }
+    @media (min-width:1200px) {
+        max-width: calc( 33% - .3rem);
+        
+    }
+    margin-bottom: .5rem;
+    .card-banner {
+        width: 100%;
+        height: 235px;
+        margin-bottom: 1rem;
+        border-radius: 16px;
+        position: relative;
+        overflow: hidden;
+        .card-submenu {
+            background: rgba(3, 3, 3, 0.7);
+            backdrop-filter: blur(2px);
+            border-radius: 0px 0px 16px 16px;
+            padding: .5rem;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            i {
+                @include Cp();
+            }
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+}
+
+
+.teacher-item {
+    @include Card;
+    border-radius: $formBorderRadius;
+    padding: .8rem .5rem .5rem;
+    align-items: center;
+    width: 300px;
+    @include Cp;
+    @media (min-width:992px) {
+        width: calc(33% - .2rem);
+    }
+}
+
+.live-chat-main-controller {
+    @include Card;
+    margin-top: 1rem;
+    padding: 1rem ;
+    gap: 1rem;
+    @include Column;
+   .chat-item {
+       @include Row;
+       width: 100%;
+       gap:.5rem;
+       border-bottom: var(--border);
+       padding-bottom: 1rem;
+   }
+   .p-inputgroup {
+       border-radius: 16px;
+       overflow: hidden;
+       input {
+           height: 3.7rem !important;
+       }
+
+       
+   }
+ }
+ 
+
+ .footer-menu-controller {
+    @include Wrap;
+    justify-content: space-evenly;
+    background:$headerFooterBg;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    border-radius: 44px 44px 0px 0px;
+    overflow: hidden;
+    &:not(.no-bg) {
+        padding: 2rem ;
+
+    }
+    position: relative;
+    .child {
+        position: relative;
+        z-index: 2;
+    }
+
+    &::after {
+        content: "";
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        z-index: 1;
+        background-image: url("http://egiby.net/coinBit/footerWave.png");
+        position: absolute;
+        height: 100px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &.no-bg::after {
+        height: 100px;
+        filter: brightness(.5);
+        background-position: bottom;
+    
+    }
+}
+
+
+ .plans-desktop-controller {
+    @include Row;
+    align-items: flex-end;
+    @include Card;
+    padding: 1rem;
+    overflow-x: scroll;
+    position: relative;
+    .col-child {
+        @include Column;
+        height: 100%;
+        justify-content: center;
+        gap: 1rem;
+        border-left: 1px solid $lineColor;
+        min-width: 176px ;
+      
+        span {
+            padding: 0 .5rem;
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+
+        .child {
+            align-items: center;
+        }
+    }
+ }
+
+
+ .profile-sidebar-controller {
+    border: .15rem solid #fff;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    display: flex;
+    
+ }
+
+  
+
+ .otp-controller {
+    @include Row;
+    justify-content: center;
+    direction: ltr;
+    padding: 1rem;
+    div {
+      @include Row;
+      justify-content: center;
+      width: 100%;
+      max-width: fit-content;
+      padding: 0 .5rem;
+    }
+    
+     input {
+        width: 2.5rem !important;
+        height: 2.5rem !important;
+        border: .15rem solid $dark_purple !important;
+        outline: none !important;
+        box-shadow: none !important;
+        border-radius: 8px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 34px;
+        padding-top: 1rem;
+        background: transparent !important;
+        color: $text !important;
+     } 
+     .p-invalid input {
+        border: .15rem solid $red !important;
+
+    }
+  }

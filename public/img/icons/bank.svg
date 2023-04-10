@@ -1,0 +1,38 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="200" height="100" viewBox="0 0 200 100">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: #303030;
+            }
+
+            .cls-2 {
+                fill: #9d71d2;
+            }
+        </style>
+    </defs>
+    <title>Bank</title>
+    <g id="Bank">
+        <g id="BankLogo">
+            <g id="Group_3861" data-name="Group 3861">
+                <path id="Path_10057" data-name="Path 10057" class="cls-1"
+                    d="M68,82.05H132V74.84H68ZM70.1,76.9h59.8V80H70.1Z" />
+                <path id="Path_10058" data-name="Path 10058" class="cls-1"
+                    d="M131.21,32.56,113.69,22.25h-6.63L100,18l-7.07,4.3H86.31L68.79,32.56H68v7.22H132V32.56Zm-18.09-8.25,14,8.25H124l-13.56-8.25Zm-26.24,0h2.67L76,32.56H72.85Zm43,13.4H70.1V34.62H94.84V32.56H80l20-12.2,20,12.2H105.16v2.06H129.9Z" />
+                <path id="Path_10059" data-name="Path 10059" class="cls-1"
+                    d="M70.1,68.65v5.16H82.48V68.65h-3.1V46h3.09V40.82H70.1V46h3.1V68.65Zm10.31,2.06v1H72.16v-1h8.25ZM72.17,43.9v-1h8.24v1H72.17ZM75.26,46h2.06V68.64H75.25Z" />
+                <path id="Path_10060" data-name="Path 10060" class="cls-1"
+                    d="M85.56,68.65v5.16H97.94V68.65H94.85V46h3.09V40.82H85.56V46h3.1V68.65Zm10.31,2.06v1H87.63v-1h8.24ZM87.63,43.9v-1h8.24v1ZM90.72,46h2.06V68.64H90.72Z" />
+                <path id="Path_10061" data-name="Path 10061" class="cls-1"
+                    d="M102.06,68.65v5.16h12.38V68.65h-3.1V46h3.1V40.82H102.06V46h3.09V68.65Zm10.31,2.06v1h-8.25v-1h8.25ZM104.12,43.9v-1h8.25v1Zm3.1,2.07h2.06V68.64h-2.06Z" />
+                <path id="Path_10062" data-name="Path 10062" class="cls-1"
+                    d="M117.54,68.65v5.16h12.37V68.65h-3.09V46h3.09V40.82H117.54V46h3.09V68.65Zm10.31,2.06v1H119.6v-1h8.25ZM119.6,43.9v-1h8.25v1ZM122.69,46h2.07V68.64h-2.07Z" />
+            </g>
+            <g id="Group_3863" data-name="Group 3863">
+                <g id="Group_3862" data-name="Group 3862">
+                    <path id="Path_10063" data-name="Path 10063" class="cls-2"
+                        d="M100,37.71a7.22,7.22,0,1,1,7.22-7.22A7.22,7.22,0,0,1,100,37.71Z" />
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

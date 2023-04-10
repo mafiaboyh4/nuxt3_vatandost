@@ -1,0 +1,23 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "start": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "nuxt": "^3.3.3",
+    "@nuxtjs/axios": "^5.13.6",
+    "bootstrap": "^5.2.2",
+    "jalali-moment": "^3.3.11",
+    "primeicons": "^6.0.1",
+    "primevue": "^3.17.0",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.0.2",
+    "swiper": "^8.4.2",
+    "vue-toastification": "^2.0.0-rc.5"
+  }
+}

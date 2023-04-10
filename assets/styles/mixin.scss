@@ -1,0 +1,106 @@
+@mixin Row() {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin Column() {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin Wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin Cp {
+    cursor: pointer;
+    transition: .6s;
+    &:hover {
+      opacity: .8;
+    }
+}
+
+@mixin Bold {
+  font-family: BoldF !important;
+}
+
+@mixin GradientBg {
+  background: linear-gradient(83.86deg, $light_purple -1.52%, $dark_purple 100%) !important;
+  @include Cp();
+  color: #fff !important;
+}
+
+@mixin DashedBorder {
+  border: .15rem dashed $dark_purple !important;
+}
+
+@mixin Purple_outline {
+  border: .15rem solid $dark_purple !important;
+  &:hover {
+    border: .15rem solid $dark_purple !important;
+
+  }
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+@mixin SubmitBtn {
+    height: 48px;
+    width: 100%;
+    border-radius: $borderRadius !important;
+    @include Bold();
+}
+
+@mixin BaseScreen {
+    @include Column;
+    width: 100%;
+    position: relative;
+    padding: .5rem;
+    padding-top: .8rem;
+    max-width: 756px;
+    margin: auto;
+}
+
+@mixin Card {
+    background: $cardBg;
+    border: none;
+    box-shadow: none;
+    border-radius: 10px;
+}
+
+@mixin FormInputController {
+    border-radius: 16px;
+    @include Column;
+    gap: .3rem;
+    margin-bottom: .5rem;
+    overflow: hidden;
+     i , .pi {
+      color: $text;
+     }
+    label {
+      position: relative;
+      padding-right: .3rem;
+    }
+    .p-inputtext , .p-dropdown {
+      background: var(--card);
+      box-shadow: none !important;
+      color: $text;
+    }
+    .p-inputgroup {
+        border-radius: 16px;
+        background: var(--card);
+        overflow: hidden;
+        border-bottom: transparent;
+        transition: .3s;
+        border: .18rem solid $text !important;
+        
+        &.invalid {
+          border: .18rem solid $red !important;
+          color: $red !important;
+        }
+        &:focus-visible , &:active , &:hover {
+          border: .18rem solid $text !important;
+        }
+      }
+}
