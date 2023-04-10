@@ -5,14 +5,14 @@
 
 @font-face {
     font-family: Lato;
-    src: url("../fonts/Peyda-Medium.ttf");
+    src: url("../fonts/PeydaWeb/PeydaWeb-SemiBold.ttf");
     // src: url("../fonts/shabnam-700.ttf");
 }
 
 @font-face {
     font-family: BoldF;
     font-weight: 600;
-    src: url("../fonts/Peyda-Medium.ttf");
+    src: url("../fonts/PeydaWeb/PeydaWeb-SemiBold.ttf");
 }
 
 
@@ -110,3 +110,10 @@ ul {
   list-style-type: none;
 }
 
+
+.color-p {
+  color: $dark2_purple;
+}
+.color-p2 {
+  color: $dark_purple;
+}

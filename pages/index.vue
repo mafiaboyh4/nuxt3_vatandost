@@ -1,6 +1,11 @@
 <template>
     <div>
-        <h1>hi</h1>
+        
+        <NuxtLayout >
+            <h1>hi</h1>
+
+                
+        </NuxtLayout>
     </div>
 </template>
 
