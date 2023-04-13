@@ -1,6 +1,7 @@
 @import './binder.scss' , 
         './componentsStyle.scss',
         './customPrime.scss' ,
+        './bootstrap.css',
         './myCustoms.scss' ;
 
 @font-face {
@@ -116,4 +117,32 @@ ul {
 }
 .color-p2 {
   color: $dark_purple;
+}
+
+
+.text-1 {
+  color: $cardBg !important;
+}
+
+.text-2 {
+  color: $dark_purple !important;
+}
+
+
+.btn-style-1 {
+  background: $cardBg !important;
+  color: #fff;
+  border-radius: 10px !important;
+}
+
+.btn-style-2 {
+  background: transparent;
+  border: .15rem solid $cardBg !important;
+  border-radius: 10px !important;
+  color: $cardBg !important;
+  &:hover {
+    background: $cardBg !important;
+    color: #fff !important;
+    border-color: transparent !important;
+  }
 }

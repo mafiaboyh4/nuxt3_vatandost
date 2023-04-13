@@ -322,7 +322,7 @@ ul {
 }
 
 
-@for $i from 10 through 25 {
+@for $i from 10 through 40 {
   .f-#{$i} {
     font-size: $i+px !important;
   }
